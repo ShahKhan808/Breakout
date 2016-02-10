@@ -176,10 +176,7 @@ void draw()
       rightturn = false;
     }
     
-    //Displays score to screen
-    fill(255);
-    textSize(22);
-    text("Points: " + point, 15, 30);
+    
     
     
   }
