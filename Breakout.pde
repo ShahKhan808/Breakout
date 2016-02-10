@@ -112,6 +112,21 @@ void draw()
         b_speedY *= -1;
       }
       
+      //For loop to destroy the blocks if the ball touches the blocks
+      for(int i = 0; i < blockX.length; i++) 
+      {
+        if(blockVis[i] && testCollision(blockX[i], blockY[i], blockLongness, blockThickness,
+                        b_positionX, b_positionY, b_longness, b_thickness))
+        {
+          b_speedY *= -1;
+          
+          blockVis[i] = false;
+          
+          //Increments score by 10 after each block is destroyed
+          point += 10;
+        }
+      }
+      
       
       
       
