@@ -38,8 +38,8 @@
   
   void setup()
   {
-    size(800, 600);
-    background(0);
+    size(800, 800);
+    background(127);
     smooth(5);
     
     //keeps count of score
