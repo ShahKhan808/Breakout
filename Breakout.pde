@@ -38,7 +38,7 @@
   
   void setup()
   {
-    size(800, 800);
+    size(800, 600);
     background(127);
     smooth(5);
     
